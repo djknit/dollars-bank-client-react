@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import dollarSign from './dollar-sign-icon.png'
+import Button from './Button';
 import './App.css';
 
 function App() {
@@ -6,17 +8,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <img src={dollarSign} className="App-logo dollar-sign" alt="logo" />
+        <p className='heading-text'>
+          Welcome to Dollar$ Bank
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="links-area">
+          <Button
+            className="App-link"
+          >
+            Sign In
+          </Button>
+          <Button
+            className="App-link"
+          >
+            New User
+          </Button>
+        </div>
       </header>
     </div>
   );
