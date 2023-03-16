@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={dollarSign} className="App-logo dollar-sign" alt="logo" />
+      <header className='App-header'>
+        <img src={logo} className={"App-logo"} alt="logo" />
+        <img src={dollarSign} className={"App-logo dollar-sign" + (isShowingForm ? ' shrink' : '')} alt="logo" />
         <p className='heading-text'>
           Welcome to Dollar$ Bank
         </p>
@@ -48,7 +48,7 @@ function App() {
           </Button>
         </div>
       </header>
-      <div className='forms-area'>
+      <div className={'forms-area' + (isShowingForm ? ' fade-in' : '')}>
           <NewUserForm
             isVisible={isShowingForm && isNewUser}
           />

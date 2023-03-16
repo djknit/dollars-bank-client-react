@@ -17,6 +17,12 @@
   .dollar-sign {
     animation: dollar-sign-an infinite 10s linear
   }
+  .App-logo.shrink {
+    animation: App-logo-spin infinite 20s linear, shrink 1s forwards;
+  }
+  .fade-in {
+    animation: fade-in 1.5s forwards;
+  }
 }
 
 .App-header {
@@ -66,23 +72,36 @@
 
 @keyframes dollar-sign-an {
   0% {
-    /* transform: rotate(0deg); */
     transform: scale(1, 1) rotate(0deg);
   }
   25% {
-    /* transform: rotate(120deg); */
     transform: scale(0.5, 0) rotate(90deg);
   }
   50% {
-    /* transform: rotate(240deg); */
     transform: scale(0, -1) rotate(180deg);
   }
   75% {
-    /* transform: rotate(120deg); */
     transform: scale(0.5, 0) rotate(270deg);
   }
   100% {
-    /* transform: rotate(0deg); */
     transform: scale(1, 1) rotate(360deg);
+  }
+}
+
+@keyframes shrink {
+  from {
+    height: 40vmin
+  }
+  to {
+    height: 40px
+  }  
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
