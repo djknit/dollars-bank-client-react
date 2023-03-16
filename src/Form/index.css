@@ -1,0 +1,14 @@
+.Form {
+    background-color: #303030;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: #101010 0 0 4px 2px;
+}
+
+.form-heading {
+    color: #6efb61;
+    font-weight: 500;
+    font-size: 1.5em;
+}

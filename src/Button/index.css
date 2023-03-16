@@ -4,3 +4,7 @@
     color: #35fc03;
     background-color: #191919;
 }
+
+.Button.is-active {
+    border-style: inset;
+}

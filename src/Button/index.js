@@ -1,13 +1,15 @@
-import React from 'react';
 import './index.css';
 
 function Button({
     action,
-    children
+    children,
+    isActive
 }) {
+    let btnClass = "Button";
+    if (isActive) btnClass += ' is-active';
 
     return (
-        <button onClick={action} className="Button">
+        <button onClick={action} className={btnClass}>
             {children}
         </button>
     );
